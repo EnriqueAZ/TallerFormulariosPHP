@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='act_15_02_2021.css'>
+    <title>Act 15/02/2021</title>
+    <!-- <script type="text/javascript" src="javascript.js"></script> -->
+    
+    <script>
+      function usingGetElementById() {
+  var cod = document.getElementById("cantidad");
+  var input = document.getElementById('input');
+  var input1 = document.getElementById('input1');
+  var input2 = document.getElementById('input2');
+
+  // if (cod.value == "1") {
+  //   document.getElementById("input").style.display = 'block';    
+  // }else{
+  //   document.getElementById("input").style.display  = 'none';      
+  // } 
+
+  // if (cod.value == "2") {
+  //   document.getElementById("input1").style.display = 'block';    
+  // }else{
+  //   document.getElementById("input1").style.display  = 'none';      
+  // } 
+    
+  // if (cod.value == "3") {
+  //   document.getElementById("input2").style.display = 'block';    
+  // }else{
+  //   document.getElementById("input2").style.display = 'none';    
+  // }
+
+  if (cod.value == "1") {
+    input.disabled = false;        
+  }else{
+    input.disabled = true;        
+  } 
+
+  if (cod.value == "2") {
+    input1.disabled = false;      
+    input.disabled = false;       
+  }else{
+    input1.disabled = true;   
+          
+  } 
+    
+  if (cod.value == "3") {
+    input2.disabled = false;        
+    input1.disabled = false;
+    input.disabled = false;
+  }else{
+    input2.disabled = true;        
+  }
+
+  
+
+//   Activar y desactivar un botón
+    
+//   var codd = document.getElementById("traducir");
+//     var button = document.getElementById('morse');
+//     var buttonn = document.getElementById('texto');
+
+//     if (codd.value == "texto") {
+//         buttonn.disabled = false;    
+//       }else{
+//         buttonn.disabled = true;      
+//       } 
+    
+//       if (codd.value == "morse") {
+//         button.disabled = false;    
+//       }else{
+//         button.disabled = true;      
+//       } 
+}
+
+
+    
+
+    </script>
+  </head>
+  <body>
+      <header>
+        <div>
+            <h1>Actividad 15/02/2021</h1>      
+        </div>
+      </header>
+      <section>
+          <div id="divs">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Ejercicio 1
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body" style="text-align: left;">
+                        <p>1. Un contratista firma un contrato de prestación de servicios para una empresa, el cual tiene un salario mensual. Al contratista se le descuenta el 10% del valor del salario mensual por concepto de retención en la fuente. Adicional a eso, el contratista debe realizar sus aportes a salud y pensión, sobre una base de cotización. La base de cotización corresponde al 40% del salario mensual. Los aportes a salud corresponden al 12.5% sobre la base de cotización y los aportes a pensiones corresponden a un 16% sobre la base de cotización. Realizar formulario que solicite el salario mensual un script que muestre el valor descontado por retención en la fuente, la base de cotización, el valor pagado a salud y el valor pagado a pensiones.</p>
+                        <div class="divs">
+                            <fieldset>
+                                <form method="POST" action="ejer1.php" >
+                                    <table style="align-items: center;" class="table">
+                                        <tr>
+                                            <td>Salario mensual: </td>
+                                            <td><input type="number" name="salarioE1"></td>
+                                        </tr>
+                                    </table>
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block">Calcular</button>
+                                </form>
+                            </fieldset>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingDos">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseDos" aria-expanded="false" aria-controls="collapseDos">
+                        Ejercicio 2
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseDos" class="collapse" aria-labelledby="headingDos" data-parent="#accordionExample">
+                    <div class="card-body" style="text-align: left;">
+                        <p>2. Una compañía de venta de celulares paga a su personal de ventas un salario básico de $300000 mensuales más una comisión de $10000 por cada celular vendido, más el 5% del valor de la venta.
+                          Cada mes el contador de la empresa ingresa el nombre del vendedor, el número de celulares vendidos y el valor total de las ventas de celulares en el mes.
+                          Realice un formulario que dados los datos ingresados por el contador calcule y muestre en un script el nombre del empleado y el salario total del empleado en el mes.</p>
+                        <div class="divs">
+                            <fieldset>
+                                <form method="POST" action="ejer2.php" >
+                                    <table style="align-items: center;" class="table">
+                                        <tr>
+                                            <td>Nombre del vendedor: </td>
+                                            <td><input type="text" name="nombreVendedorE2"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Numero celulares vendidos: </td>
+                                          <td><input type="number" name="celularesVendidosE2"></td>
+                                      </tr>
+                                      <tr>
+                                          <td>Valor total de ventas: </td>
+                                          <td><input type="number" name="valorVentasE2"></td>
+                                      </tr>
+                                    </table>
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block">Calcular</button>
+                                </form>
+                            </fieldset>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingTres">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
+                        Ejercicio 3
+                      </button>
+                    </h2>
+                  </div>
+                <div id="collapseTres" class="collapse" aria-labelledby="headingTres" data-parent="#accordionExample">
+                  <div class="card-body" style="text-align: left;">
+                      <p>3. Una persona interesada en un empleo, realiza un test de capacitación. En dicho test la empresa obtuvo la siguiente información. Cantidad total de preguntas que se le realizaron y la cantidad de preguntas que contestó correctamente. La empresa le ha solicitado desarrollar un formulario que ingrese el nombre del candidato, la cantidad de preguntas del test y la cantidad de preguntas respondidas correctamente.Y realizar un script el cual deberá mostrar el nombre del candidato, el porcentaje de preguntas acertadas y el nivel en el cual ha quedado. El porcentaje de preguntas correctas se pude calcular de la siguiente forma. % preguntas correctas = (preguntas correctas / total preguntas) * 100 El nivel se calcula de acuerdo al siguiente rango.</p>
+                      <div class="divs">
+                          <fieldset>
+                              <form method="POST" action="ejer3.php" >
+                                  <table style="align-items: center;" class="table">
+                                      <tr>
+                                          <td>Nombre del candidato: </td>
+                                          <td><input type="text" name="nombreCandidatoE3"></td>
+                                      </tr>
+                                      <tr>
+                                        <td>Numero de preguntas: </td>
+                                        <td><input type="number" name="numeroPreguntasE3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Preguntas correctas: </td>
+                                        <td><input type="number" name="preguntasCorrectasE3"></td>
+                                    </tr>
+                                  </table>
+                                  <button type="submit" class="btn btn-primary btn-lg btn-block">Calcular</button>
+                              </form>
+                          </fieldset>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingCuatro">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseCuatro" aria-expanded="false" aria-controls="collapseCuatro">
+                      Ejercicio 4
+                    </button>
+                  </h2>
+                </div>
+              <div id="collapseCuatro" class="collapse" aria-labelledby="headingCuatro" data-parent="#accordionExample">
+                <div class="card-body" style="text-align: left;">
+                    <p>4. El índice de masa corporal (IMC) es una medida de asociación entre el peso y la talla de un individuo. Ideado por el estadístico belgaL. A. J. Quetelet, por lo que también se conoce como índice de Quetelet. Desarrollar un formulario que solicite el peso en kilogramos y la longitud en metros de una persona y calcule y muestre en un script el índice de masa corporal y la categoría en la cual se encuentra el individuo en base a la siguiente tabla.</p>
+                    <div class="divs">
+                        <fieldset>
+                            <form method="POST" action="ejer4.php" >
+                                <table style="align-items: center;" class="table">
+                                    <tr>
+                                        <td>Peso: </td>
+                                        <td><input type="number" name="pesoE4" step="0.01"></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Estatura: </td>
+                                      <td><input type="number" name="estaturaE4" step="0.01"></td>
+                                  </tr>
+                                </table>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Calcular</button>
+                            </form>
+                        </fieldset>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingCinco">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseCinco" aria-expanded="false" aria-controls="collapseCinco">
+                    Ejercicio 5
+                  </button>
+                </h2>
+              </div>
+            <div id="collapseCinco" class="collapse" aria-labelledby="headingCinco" data-parent="#accordionExample">
+              <div class="card-body" style="text-align: left;">
+                  <p>5. Crear un formulario que solicite la base y la altura de un triángulo rectángulo, y de acuerdo al radio button seleccionado, calcular y mostrar en un script el área, la hipotenusa o el perímetro del triángulo.</p>
+                  <div class="divs">
+                      <fieldset>
+                          <form method="POST" action="ejer5.php" >
+                              <table style="align-items: center;" class="table">
+                                  <tr>
+                                      <td>Base: </td>
+                                      <td><input type="number" name="BaseE5" step="0.01"></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Altura: </td>
+                                    <td><input type="number" name="AlturaE5" ></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Qué calcular: </td>
+                                    <td>
+                                      <input type="radio" name="calcularE5" value="area" id="area">
+                                      <label for="area">Área</label>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td>
+                                      <input type="radio" name="calcularE5" value="perimetro" id="perimetro">
+                                      <label for="perimetro">Perímetro</label>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td>
+                                      <input type="radio" name="calcularE5" value="hipotenusa" id="hipotenusa">
+                                      <label for="hipotenusa">Hipotenusa</label>
+                                    </td>
+                                  </tr>
+                              </table>
+                              <button type="submit" class="btn btn-primary btn-lg btn-block">Calcular</button>
+                          </form>
+                      </fieldset>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingSeis">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">
+                  Ejercicio 6
+                </button>
+              </h2>
+            </div>
+          <div id="collapseSeis" class="collapse" aria-labelledby="headingSeis" data-parent="#accordionExample">
+            <div class="card-body" style="text-align: left;">
+                <p>6. En un almacén de zapatos se planea ofrecer a los clientes un descuento que dependerá del número de zapatos que compre. Si compra un par no hay descuento, Si se compran dos pares de zapatos, el par de mayor valor se paga completo y el par de menor valor queda a la mitad del precio. Si compra 3 pares, los dos pares de mayor valor se pagan completos y el tercero le sale gratis. Crear un formulario que solicite la cantidad de zapatos a comprar, el precio de cada par y un script que calcule y muestre el total a pagar por la compra.</p>
+                <div class="divs">
+                    <fieldset>
+                        <form method="POST" action="ejer6.php" >
+                            <table style="align-items: center;" class="table">
+                                <tr>
+                                    <td>Cantidad pares: </td>
+                                    <td>
+                                      <select name="cantidad" id="cantidad" onchange='usingGetElementById();'>
+                                        <option value="0" selected>...</option>
+                                        <option value="1" >Un par</option>
+                                        <option value="2" >Dos pares</option>
+                                        <option value="3" >Tres pares</option>
+                                      </select>
+                                    </td>
+                                </tr>
+                                <tr  >
+                                    <td>Valor par 1: </td>
+                                    <td><input type="number" name="par1E5" step="0.01" id="input" disabled></td>
+                                </tr>
+                                <tr >
+                                  <td>Valor par 2: </td>
+                                  <td><input type="number" name="par2E5" step="0.01"  id="input1" disabled></td>
+                                </tr>
+                                <tr  >
+                                  <td>Valor par 3: </td>
+                                  <td><input type="number" name="par3E5" step="0.01"  id="input2" disabled></td>
+                                </tr>
+                            </table>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" id="calcular" onclick="cambiar();">Calcular</button>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingSiete">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSiete" aria-expanded="false" aria-controls="collapseSiete">
+                Ejercicio 7
+              </button>
+            </h2>
+          </div>
+        <div id="collapseSiete" class="collapse" aria-labelledby="headingSiete" data-parent="#accordionExample">
+          <div class="card-body" style="text-align: left;">
+              <p>7. Código Morse
+                Tal vez el esquema de codificación más famoso de todos es el código Morse, desarrollado por Samuel Morse en 1832 para el sistema telegráfico. El código Morse asigna una serie de puntos y rayas a cada letra del abecedario, a cada dígito y a algunos caracteres especiales (punto, coma, dos puntos y punto y coma). Ver tabla adjunta. Escribir un formulario que lea una frase y un script la codifique en código Morse, y lo contrario. La separación entre letras se indicará mediante un espacio, mientras que la separación entre palabras se indicará mediante 2 espacios.</p>
+              <div class="divs">
+                  <fieldset>
+                      <form method="POST" action="ejer8.php" >
+                          <table style="align-items: center;" class="table">
+                            <tr>
+                              <td>Entrada: </td>
+                              <td>
+                                <textarea name="textarea1" id="textarea1" cols="30" rows="10"></textarea>
+                              </td>
+                              <tr>
+                                <td>traducir: </td>
+                                <td>
+                                  <select name="traducir" id="traducir" onchange='javascript:usingGetElementById();'>
+                                    <option value="morse" >Morse</option>
+                                    <option value="texto" >Texto</option>
+                                  </select>
+                                </td>
+                            </tr>
+                          </table>
+                          <button type="reset" class="btn btn-primary btn-lg btn-block">Restablecer</button>
+                          <button type="submit" class="btn btn-primary btn-lg btn-block" id="texto">Traducir</button>
+                      </form>
+                  </fieldset>
+              </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="card">
+          <div class="card-header" id="headingOcho">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOcho" aria-expanded="false" aria-controls="collapseOcho">
+                Ejercicio 8
+              </button>
+            </h2>
+          </div>
+        <div id="collapseOcho" class="collapse" aria-labelledby="headingOcho" data-parent="#accordionExample">
+          <div class="card-body" style="text-align: left;">
+              <p>8. AEROLINEAS MANIZALES
+                La empresa de transporte aéreo “Aerolíneas Manizales” ha establecido la siguiente tabla de tarifas para los destinos.
+                • Manizales – Neiva y viceversa $ 347.000 • Manizales – Pereira y viceversa $ 360.000 • Manizales – Pasto y viceversa $ 382.000 • Neiva – Pereira y viceversa $ 375.000 • Neiva – Pasto y viceversa $ 392.000 • Pereira – Pasto y viceversa $ 408.000
+                Nota. Estas tarifas aplican para clase turista. En primera clase, se le debe incrementar el 20% a la tarifa. En clase ejecutiva, se le debe incrementar el 50% a la tarifa. Como están de aniversario, han establecido una promoción para los clientes, la cual consiste en lo siguiente. Si la edad del pasajero es mayor a 30 años tendrá un 10% de descuento. En caso contrario tendrá un 15% de descuento. Adicional a esto, la aerolínea ofrece los siguientes servicios a módicos precios. Alimentación. $25000. Internet. $ 5000. Maletero. $ 4000 Se debe crear la siguiente interfaz, y en las listas de las ciudades se mostraran las siguientes tanto en origen como destino.</p>
+              <div class="divs">
+                  <fieldset>
+                      <form method="POST" action="ejer8.php" >
+                          <table style="align-items: center;" class="table">
+                            <tr>
+                              <td>Ciudad de origen: </td>
+                              <td>
+                                <select name="ciudadOrigenE8">
+                                  <option value="manizales" selected>Manizales</option>
+                                  <option value="neiva">Neiva</option>
+                                  <option value="pereira">Pereira</option>
+                                  <option value="pasto">Pasto</option>
+                                </select>
+                                </td>
+                              </tr>
+                              <tr>
+                                <tr>
+                                  <td>Ciudad de destino: </td>
+                                  <td>
+                                    <select name="ciudadDestinoE8">
+                                      <option value="manizales" selected>Manizales</option>
+                                      <option value="neiva">Neiva</option>
+                                      <option value="pereira">Pereira</option>
+                                      <option value="pasto">Pasto</option>
+                                    </select>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                <td>Clase: </td>
+                                <td>
+                                   <input type="radio" name="claseE8" value="turista" checked>Turista<br>
+                                   <input type="radio" name="claseE8" value="primeraClase">Primera clase<br>
+                                   <input type="radio" name="claseE8" value="ejecutiva">Ejecutiva<br>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Servicios: </td>
+                              <td>
+                                <input type="checkbox" name="alimentacionE8">Alimentación<br>
+                                <input type="checkbox" name="internetE8">Internet<br>
+                                <input type="checkbox" name="maleteroE8">Alarma<br>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Nombre: </td>
+                              <td><input type="text" name="nombreE8" placeholder="ingrese nombre" maxlength="5" required autofocus></td>
+                            </tr>
+                            <tr>
+                              <td>Edad: </td>
+                              <td><input type="number" name="edadE8" placeholder="ingrese edad" maxlength="5" required autofocus></td>
+                            </tr>
+                          </table>
+                          <button type="reset" class="btn btn-primary btn-lg btn-block">Restablecer</button>
+                          <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                      </form>
+                  </fieldset>
+              </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="card">
+          <div class="card-header" id="headingNueve">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseNueve" aria-expanded="false" aria-controls="collapseNueve">
+                Ejercicio 9
+              </button>
+            </h2>
+          </div>
+        <div id="collapseNueve" class="collapse" aria-labelledby="headingNueve" data-parent="#accordionExample">
+          <div class="card-body" style="text-align: left;">
+              <p>9. La pizzeria saboreo desea crear el servicio de domicilios online, para ello lo contrata a usted para que le desarrolle el sitio web. La propuesta es que este tenga la siguiente interfaz gráfica</p>
+              <div class="divs">
+                  <fieldset>
+                      <form method="POST" action="ejer9.php" >
+                          <table style="align-items: center;" class="table">
+                              <tr>
+                                  <td>Tamaño de la pizza: </td>
+                                  <td>
+                                    <select name="tamanoE9" id="tamanoE9" onchange='javascript:usingGetElementById();'>
+                                      <option value="grande" >Grande (20000)</option>
+                                      <option value="mediano" >Mediano (12000)</option>
+                                      <option value="personal" >Personal (6000)</option>
+                                    </select>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td>Sabor: </td>
+                                <td>
+                                  <select name="saborE9" id="saborE9" onchange='javascript:usingGetElementById();'>
+                                    <option value="hawayana" >Hawayana</option>
+                                    <option value="carnes" >Carnes</option>
+                                    <option value="pollo" >Pollo con champiñones</option>
+                                  </select>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Adicionales: </td>
+                                <td>
+                                  <input type="checkbox" name="bordeQuesoE9" id="bordeQuesoE9">
+                                  <label for="bordeQuesoE9">Borde de queso (1300)</label>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>
+                                  <input type="checkbox" name="aceitunasE9" id="aceitunasE9">
+                                  <label for="aceitunasE9">Aceitunas (1500)</label>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>
+                                  <input type="checkbox" name="peperoniE9" id="peperoniE9">
+                                  <label for="peperoniE9">Peperoni (1000)</label>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>
+                                  <input type="checkbox" name="maizTiernoE9" id="maizTiernoE9">
+                                  <label for="maizTiernoE9">Maiz tierno (800)</label>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>
+                                  <input type="checkbox" name="jalapenoE9" id="jalapenoE9">
+                                  <label for="jalapenoE9">Jalapeño (700)</label>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Gaseosa (4000): </td>
+                                <td>
+                                  <input type="radio" name="gaseosaE9" value="si" id="gaseosaE9">
+                                  <label for="gaseosaE9">Sí</label>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td>
+                                  <input type="radio" name="gaseosaE9" value="no" id="gaseosa2E9">
+                                  <label for="gaseosa2E9">No</label>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Nombre: </td>
+                                <td>
+                                  <input type="text" name="nombreE9" required>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Dirección: </td>
+                                <td>
+                                  <input type="text" name="direccionE9" required>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Comentarios: </td>
+                                <td>
+                                  <textarea name="comentariosE9" id="comentariosE9" cols="23" rows="2"></textarea>
+                                </td>
+                              </tr>
+                          </table>
+                          <button type="reset" class="btn btn-primary btn-lg btn-block">Restablecer</button>
+                          <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                      </form>
+                  </fieldset>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingDiez">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseDiez" aria-expanded="false" aria-controls="collapseDiez">
+              Ejercicio 10
+            </button>
+          </h2>
+        </div>
+      <div id="collapseDiez" class="collapse" aria-labelledby="headingDiez" data-parent="#accordionExample">
+        <div class="card-body" style="text-align: left;">
+            <p>10. El concesionario de vehículos “Tu Renault”, desea que le desarrollen una aplicación para, la cual le permitirá a sus clientes conocer los valores de los vehículos que tienen a la venta. Este mes han decidido hacerle un homenaje a la mujer. Dicho homenaje consiste en que si el cliente es mujer, obtendrá un 5% de descuento sobre el precio del vehículo.
+              Adicional a esto, el concesionario ofrece la venta e instalación de accesorios a los vehículos tal como aparece en la tabla accesorios.</p>
+            <div class="divs">
+                <fieldset>
+                    <form method="POST" action="ejer10.php" >
+                        <table style="align-items: center;" class="table">
+                          <tr>
+                            <td>Modelo: </td>
+                            <td>
+                              <select name="modeloE10">
+                                <option value="twingo" selected>Twingo</option>
+                                <option value="sandero">Sandero</option>
+                                <option value="koleos">Koleos</option>
+                                <option value="logan">Logan</option>
+                              </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Version: </td>
+                              <td>
+                                 <input type="radio" name="versionE10" value="basico" checked>Basico<br>
+                                 <input type="radio" name="versionE10" value="aire">Aire<br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Accesorios: </td>
+                            <td>
+                              <input type="checkbox" name="vidriosE10">Vidrios Electricos<br>
+                              <input type="checkbox" name="bloqueoE10">Bloqueo Central<br>
+                              <input type="checkbox" name="alarmaE10">Alarma<br>
+                              <input type="checkbox" name="peliculaE10">Pelicula de seguridad<br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Nombre: </td>
+                            <td><input type="text" name="nombreE10" placeholder="ingrese nombre" maxlength="5" required autofocus></td>
+                          </tr>
+                          <tr>
+                            <td>Edad: </td>
+                            <td><input type="number" name="edadE10" placeholder="ingrese edad" maxlength="5" required autofocus></td>
+                          </tr>
+                          <tr>
+                            <td>Sexo: </td>
+                            <td>
+                               <input type="radio" name="sexoE10" value="hombre">Hombre<br>
+                               <input type="radio" name="sexoE10" value="mujer" checked>Mujer<br>
+                          </td>
+                        </tr>
+                        </table>
+                        <button type="reset" class="btn btn-primary btn-lg btn-block">Restablecer</button>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+      </div>
+    </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Ejercicio 
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+      <footer>
+            Carlos Enrique Álape Hernández
+      </footer>
+      
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
